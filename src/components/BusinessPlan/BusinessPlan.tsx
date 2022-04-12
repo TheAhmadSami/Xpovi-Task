@@ -117,7 +117,7 @@ export default function BusinessPlan() {
       let disableValue = null;
       let disableQuestionValue = null;
       if (question.disable_condition) {
-        disableValue = question1[question.disable_condition.question].answers[question.disable_condition.value];
+        disableValue = question2[question.disable_condition.question].answers[question.disable_condition.value];
         disableQuestionValue = question2[question.disable_condition.question].value;
       }
 
@@ -152,7 +152,7 @@ export default function BusinessPlan() {
               : <Form.Control
                 type="number"
                 defaultValue={question.value}
-                onClick={(e) => {
+                onChange={(e) => {
                   let question2Update = question2.map(obj =>
                     obj.name === question.name ? { ...obj, value: e.target.value } : obj
                   );
