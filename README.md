@@ -7,7 +7,7 @@
 
 > Step2
 
-npm run dev
+    npm run dev
 
 > Used Packages
 
@@ -19,3 +19,4 @@ npm run dev
     - react-dom
     - react-router-dom
     - sass
+
