@@ -1,0 +1,17 @@
+@import './../../assets//styles/mixins';
+
+#logo{
+  position: relative;
+
+  img{
+    height: 50px;
+
+    &:nth-child(2){
+      position: absolute;
+      top: 15px;
+      left: 0;
+      filter: blur(10px);
+      opacity: .7;
+    }
+  }
+}

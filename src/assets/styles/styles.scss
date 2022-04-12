@@ -1,0 +1,33 @@
+@import './config.scss';
+
+html,
+body {
+  @include w-100;
+  @include h-100;
+  @include font-roboto;
+  overflow-x: hidden;
+  background: #FCFBFB;
+  // font-size: 69%;
+}
+
+body {
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    position: absolute;
+    content: '';
+    @include force-square(600px);
+    background: var(--red-5);
+    top: -180px;
+    left: -150px;
+    border-radius: 250px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+}
+
+
+._page {
+  padding: 100px 0;
+}

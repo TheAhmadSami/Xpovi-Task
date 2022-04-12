@@ -1,0 +1,21 @@
+@import './../../assets//styles/mixins';
+
+
+#custom-navbar{
+padding-top: 20px;
+}
+
+.navbar-logo{
+  height: 60px;
+}
+
+.navbar-controls{
+  @include flex-center-center;
+  gap: 10px;
+
+  button{
+    &:nth-child(2){
+      box-shadow: 1px 10px 30px var(--red-20);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+:root {
+  --primary: rgb(47, 198, 183);
+  --primary-hover: hsl(174, 62%, 43%);
+  --primary-10: hsla(174, 62%, 43%, .1);
+  --primary-15: hsla(174, 62%, 43%, .15);
+  --primary-20: hsla(174, 62%, 43%, .2);
+  --primary-50: hsla(174, 62%, 43%, .5);
+
+  --sec: rgb(248, 201, 13);
+  --sec-darker: hsl(48, 94%, 46%);
+  --sec-fade: hsla(48, 94%, 51%, 0.2);
+  --sec-fade-hover: hsla(48, 94%, 51%, 0.25);
+
+  --dark: hsl(196, 84%, 23%);
+  --dark-20: hsla(196, 84%, 23%, .1);
+
+  --black: hsl(0, 0%, 13%);
+  --black-hover: hsl(0, 0%, 24%);
+  --black-20: hsla(0, 0%, 13%, 0.20);
+  --white: hsl(0, 0%, 100%);
+  --white-20: hsla(0, 0%, 100%, 0.20);
+
+  --red: hsl(348, 100%, 49%);
+  --red-hover: hsl(348, 100%, 43%);
+  --red-5: hsla(348, 100%, 49%, 0.05);
+  --red-10: hsla(348, 100%, 49%, 0.10);
+  --red-20: hsla(348, 100%, 49%, 0.20);
+  --red-30: hsla(348, 100%, 49%, 0.30);
+  --red-50: hsla(348, 100%, 49%, 0.50);
+  --red-70: hsla(348, 100%, 49%, 0.70);
+
+  --green: hsl(174, 62%, 48%);
+  --green-hover: hsl(174, 62%, 43%);
+  --green-5: hsla(174, 62%, 48%, 0.05);
+  --green-10: hsla(174, 62%, 48%, 0.10);
+  --green-20: hsla(174, 62%, 48%, 0.20);
+  --green-30: hsla(174, 62%, 48%, 0.30);
+  --green-50: hsla(174, 62%, 48%, 0.50);
+  --green-70: hsla(174, 62%, 48%, 0.70);
+
+  --grey: hsl(210, 11%, 89%);
+  --grey-light: hsl(0, 0%, 96%);
+  --grey-dark: hsl(0, 0%, 70%);
+  --grey-hover: hsl(206, 12%, 85%);
+
+  --text: hsl(0, 0%, 13%);
+  --title: hsl(196, 84%, 23%);
+  --subtitle: hsl(0, 0%, 70%);
+
+
+  --font-title: 20px;
+  --font-normal: 16px;
+  --font-small: 14px;
+}
+
+:root .to-dark-mode {
+  --bg: #18191A;
+  --level1-text: #ffffff;
+}

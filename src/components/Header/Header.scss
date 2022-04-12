@@ -1,0 +1,80 @@
+@import './../../assets//styles/mixins';
+
+#header {
+  .info-section {
+    @include flex-center-start;
+    @include flex-col;
+    padding: 100px 0;
+    gap: 10px;
+
+    .slogan {
+      color: var(--red);
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      font-weight: 900;
+
+      span {
+        color: var(--red);
+      }
+    }
+
+    .info {
+      color: var(--grey-dark);
+      font-size: 1.3rem;
+      width: 70%;
+      line-height: 1.2;
+      font-weight: 300;
+    }
+
+    .header-btn {
+      @include flex-center-center;
+      $height: 60px;
+      $br: 10px;
+      $bg-color: var(--red);
+      $bg-color-hover: var(--red-hover);
+      height: $height;
+      padding: 0 30px;
+      border: none;
+      color: #fff;
+      background: var(--red);
+      border-radius: $br;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+
+      &:hover {
+        background: $bg-color-hover;
+
+        &::before {
+          background: $bg-color-hover;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: -18px;
+        z-index: -1;
+        height: $height;
+        width: 50px;
+        background: $bg-color;
+        border-radius: 0 $br 20px 0;
+        transform: skewX(30deg);
+
+        &:hover {
+          background: $bg-color-hover;
+        }
+      }
+    }
+  }
+
+  .header-img {
+    width: 100%;
+    filter: drop-shadow(0 30px 50px var(--black-20));
+  }
+}
