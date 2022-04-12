@@ -165,6 +165,7 @@ export default function BusinessPlan() {
     })
   }
 
+  //fake api call
   const planApiCall = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(true);
@@ -179,14 +180,11 @@ export default function BusinessPlan() {
     })
   }
 
-
   return (
     <div id="business-plan" className="_page">
       <Container>
 
-        <Row>
-          <h1>Business Plan Generator</h1>
-        </Row>
+        <h1>Business Plan Generator</h1>
 
         {/* steps */}
         <Row className="justify-content-center">
